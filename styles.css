@@ -1,0 +1,288 @@
+/*nav {
+  width: max-content;
+  position: sticky;
+  top: 0;
+  margin-top: -10px;
+  margin-left: -10px;
+  padding: 1rem;
+  background: gray;
+  border-bottom-right-radius: 15px;
+  visibility: hidden;
+}
+
+nav.show {
+  visibility: visible;
+}
+
+nav > .image-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+nav img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}*/
+
+nav > .title-box {
+  font-size: 1.3rem;
+}
+
+nav > .title-box > div {
+  margin: auto;
+  width: max-content;
+}
+
+body {
+  background: radial-gradient(
+    rgb(187 173 173),
+    rgb(187 173 173),
+    rgb(90, 83, 83)
+  );
+}
+
+body > .profile-container {
+  margin: auto;
+}
+
+main > .profile-container > .profile-img-box {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 5rem;
+  border-radius: 50%;
+}
+
+main > .profile-container > .profile-img-box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+main > .profile-container > .profile-title {
+  font-size: 2rem;
+  margin: auto;
+  width: max-content;
+  margin-top: 1rem;
+}
+
+main > .profile-container > .profile-about {
+  font-size: 1.6rem;
+  margin: 1rem auto;
+  width: max-content;
+}
+
+main > .profile-container > .profile-description-box {
+  width: 80%;
+  margin: auto;
+  border: 1px solid gray;
+  padding: 1rem;
+  border-radius: 15px;
+  background: rgb(231 222 222);
+}
+
+main > .profile-container > .profile-description-box > p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.line-break {
+  width: 70%;
+  height: 3px;
+  background: gray;
+  border-radius: 25%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+main .project-container > h2 {
+  font-size: 2rem;
+  margin: 0 auto;
+  width: max-content;
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+
+main .project-container > h3 {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  width: max-content;
+}
+
+main .project-container > div {
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+
+main .project-container > div.reverse {
+  flex-direction: row-reverse;
+}
+
+main .project-container .project-image {
+  width: 45%;
+  height: 300px;
+  align-self: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+main .project-container .project-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: fill;
+}
+
+main .project-container .project-description-box {
+  width: 50%;
+  margin: 0 1rem;
+  border-radius: 15px;
+  border: 1px solid gray;
+  padding: 1rem;
+  background: rgb(231 222 222);
+}
+
+main .project-container .project-description-box > p {
+  font-size: 1.1rem;
+}
+
+main .experience-container > h2 {
+  width: max-content;
+  margin: 2rem auto;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+main .experience-container > div {
+  padding: 1rem 2rem;
+  border: 1px solid gray;
+  border-radius: 15px;
+  width: 80%;
+  margin: auto;
+  background: rgb(231 222 222);
+}
+
+main .experience-container > div h3 {
+  font-size: 1.5rem;
+}
+
+main .experience-container > div a {
+  all: unset;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: black;
+}
+
+main .experience-container > div a:hover {
+  color: #0b2a91;
+  font-weight: bold;
+}
+
+main .experience-container .hidden-certificate {
+  position: relative;
+  justify-content: center;
+}
+
+main .experience-container .hidden-certificate:not(:last-child) {
+  border-bottom: 1px solid gray;
+  padding-bottom: 2rem;
+}
+
+main .experience-container .hidden-certificate > img {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  visibility: hidden;
+  justify-self: center;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  top: -5px;
+  z-index: 50;
+}
+
+main .experience-container .hidden-certificate .button {
+  background: rgb(167, 152, 152);
+  border-radius: 25px;
+  width: max-content;
+  margin: auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: rgb(205 190 190);
+}
+
+main .experience-container .hidden-certificate .button:hover {
+  background: rgb(187 173 173);
+}
+
+main .experience-container .hidden-certificate.active > img {
+  visibility: visible;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+footer h2 {
+  font-size: 2rem;
+  width: max-content;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+footer a {
+  all: unset;
+  border: 1px solid gray;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  display: flex;
+  margin: auto;
+  width: max-content;
+  cursor: pointer;
+  background: rgb(221 216 216);
+}
+
+footer a:hover,
+footer > div:hover {
+  background: rgb(209 197 197);
+}
+
+footer a:hover,
+footer > div:hover {
+  color: #0b2a91;
+}
+
+footer > div {
+  width: max-content;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border: 1px solid gray;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  background: rgb(221 216 216);
+}
+
+@media (max-width: 1100px) {
+  main .project-container > div {
+    display: grid;
+    justify-items: center;
+  }
+
+  main .project-container .project-image {
+    width: 75%;
+  }
+
+  main .project-container .project-description-box {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

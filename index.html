@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <title>Portifolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="./scripts.js"></script>
+  </head>
+  <body onclick="removeEvent(this)">
+    <!--<nav>
+      <div class="image-box">
+        <img src="./img/foto de perfil.jpeg" />
+      </div>
+      <div class="title-box">
+        <div>Rodrigo Leite</div>
+        <div>Badini</div>
+      </div>
+    </nav>-->
+    <main>
+      <section class="profile-container">
+        <div class="profile-img-box">
+          <img src="./img/foto de perfil.jpeg" />
+        </div>
+        <div class="profile-title">Rodrigo Leite Badini</div>
+        <div class="profile-about">Sobre mim</div>
+        <div class="profile-description-box">
+          <p>
+            Ola, tenho 30 anos e minha jornada no aprendizado começou em cursos
+            de video aula por volta de 2020, iniciando pelo básico de HTML, CSS
+            e JavaScript.
+            <br />
+            <br />
+            Hoje, após 6 anos, meu maior projeto é feito em React e Node.js,
+            sendo minha especialização. Meu processo de aprendizado foi difícil,
+            mas tenho um bordão pessoal:
+            <strong>
+              "Se consigo me imaginar fazendo algo, isso é possível de ser
+              feito."
+            </strong>
+            Foi assim que cheguei até aqui e pretendo continuar aprendendo mais
+            ao longo da minha carreira.
+            <br />
+            <br />
+            Agora, falando um pouco sobre mim, sou determinado e, mesmo sabendo
+            que sou passível de cometer erros, irei aprender com eles e me
+            tornar um profissional ainda melhor. Sou novato no mercado de
+            trabalho, mas tenho certeza de que sou adaptável o suficiente para
+            me encaixar aos padrões da empresa.
+          </p>
+        </div>
+        <div class="line-break"></div>
+      </section>
+      <section class="project-container">
+        <h2>Projetos</h2>
+        <h3>MyTube</h3>
+        <div class="reverse">
+          <div class="project-image">
+            <img src="./img/MyTube.png" />
+          </div>
+          <div class="project-description-box">
+            <p>
+              Este é o meu maior projeto, um clone do YouTube feito em react
+              para o frontEnd e node.js com express para o backend, utilizando
+              recaptcha v3 do google. Este site é responsivo, permite criar
+              contas que guardam informaçoes como inscriçoes,
+              personalizaçao,videos do usuario, historico e videos curtidos. Já
+              os videos que aparecem no feed sao buscados atravez de relevancia
+              com as tags do usuario, ou tags padroes caso esteja deslogado. Os
+              videos tambem tem informaçoes guardadas no banco de dados como
+              likes, visualizaçoes, descriçao e comentarios que por sua vez
+              tambem guardam informaçoes de like e comentarios. as contas tambem
+              tem acesso a pagina de gerenciamento de canais quando estao
+              logadas, onde pode verificar todos os videos e suas informaçoes,
+              analizes graficas do ultimo video, comentarios de todos os videos,
+              personalizaçao de canal e informaçoes. por ultimo gostaria de
+              pedir para que deixe um feedback caso se sinta confortavel, e/ou
+              encontre bugs no site. o botao fica no fim da barra lateral.
+              obrigado.
+            </p>
+          </div>
+        </div>
+        <h3>Ping-pong</h3>
+        <div>
+          <div class="project-image">
+            <img src="./img/ping-pong.png" />
+          </div>
+          <div class="project-description-box">
+            <p>
+              Este é um jogo de ping-pong feito em HTML,CSS e javaScript, o jogo
+              move a bolinha em linha reta frame por frame infinitamente, sempre
+              verificando se ela esta em contato com uma superficie, caso sim
+              ela inverte seu angulo e continua a se mover. o jogo detecta
+              superficie nos retangulos e paredes, e a barra movida pelo jogador
+              que sempre segue o mouse e tem duas extremidades direita e
+              esquerda, fazendo o angulo da bolinha ir preferencialmente para a
+              direçao dessa extremidade. o jogo acaba quando a bolinha cruza a
+              linha vermelha ou quando todos os blocos sumirem, sendo honesto so
+              consegui vencer o jogo uma vez kkkk.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="line-break"></div>
+      <section class="experience-container">
+        <h2>Certificados</h2>
+        <div>
+          <h3>Desenvolvimento Web Completo</h3>
+          <a
+            href="https://ude.my/UC-6a80c305-5fc2-4678-ae16-dc0fcd6f193c"
+            target="_blank"
+            >Comprovação do certificado</a
+          >
+          <div class="hidden-certificate">
+            <div class="button" onclick="showCertificate(this)">
+              Mostrar Certificado.
+            </div>
+            <img src="./img/Certificado desenvolvimento frontEnt UDEMY.jpg" />
+          </div>
+
+          <h3>Udemy: Desenvolvimento React do zero c/ hooks, router e API.</h3>
+          <a
+            href="https://ude.my/UC-4113d5b6-fe40-4984-9f7a-4b5e7de125f8"
+            target="_blank"
+          >
+            Comprovação do certificado
+          </a>
+          <div class="hidden-certificate">
+            <div class="button" onclick="showCertificate(this)">
+              Mostrar Certificado.
+            </div>
+            <img src="./img/certificado React UDEMY.jpg" />
+          </div>
+
+          <h3>Programaçao em Python do basico ao avançado.</h3>
+          <a
+            href="https://ude.my/UC-bedc5133-64f5-4f7c-a203-f7c7f61e648d"
+            target="_blank"
+          >
+            Comprovação do certificado
+          </a>
+          <div class="hidden-certificate">
+            <div class="button" onclick="showCertificate(this)">
+              Mostrar Certificado.
+            </div>
+            <img src="./img/Certificado Python UDEMY.jpg" />
+          </div>
+        </div>
+      </section>
+      <div class="line-break"></div>
+    </main>
+    <footer>
+      <h2>Entre em Contato</h2>
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=rodrigoleitebadini1@gmail.com&su=Contato%20pelo%20portfólio"
+        >rodrigoleitebadini1@gmail.com</a
+      >
+      <div onclick="rollTop()">Voltar ao topo</div>
+    </footer>
+  </body>
+</html>
