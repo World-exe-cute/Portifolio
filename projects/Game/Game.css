@@ -1,0 +1,183 @@
+.BarraEsq{
+    border: 3px solid blue;
+    width: 5%;
+    position: absolute;
+    top: 91%;
+    left: 37%;
+}
+.BarraDir{
+    border: 3px solid blue;
+    width: 5%;
+    position: absolute;
+    top: 91%;
+    left: 42%;
+}
+.Ball {
+    border: 5px solid rebeccapurple;
+    border-radius: 100%;
+    position: absolute;
+    left: 42%;
+    top: 89%;
+}
+.DeadZone{
+    border: 1px solid red;
+    width: 100%;
+    position: absolute;
+    top: 98%;
+}
+.ParedeEsq{
+    border: 1px solid gray;
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 1%;
+    background: gray;
+}
+.ParedeDir{
+    border: 1px solid gray;
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 99%;
+    width: 1%;
+    background: gray;
+}
+.ParedeTeto {
+    border: 1px solid gray;
+    width: 100%;
+    position: absolute;
+    bottom: 99%;
+    height: 1%;
+    background: gray;
+}
+.Block{
+    border: 5px solid black;
+    width: 5%;
+    height: 2%;
+    position: absolute;
+    background: black;
+}
+.alert {
+    background: blue;
+}
+    .A1{
+        top: 30%;
+        left: 15%;
+    }
+    .A2{
+        top: 9%;
+        left: 5%;
+    }
+    .A3{
+        top: 22%;
+        left: 27%;
+    }
+    .A4{
+        top: 62%;
+        left: 7%;
+    }
+    .A5{
+        top: 29%;
+        left: 39%;
+    }
+    .A6{
+        top: 29%;
+        left: 45%;
+    }
+    .A7{
+        top: 63%;
+        left: 79%;
+    }
+    .A8{
+        top: 36%;
+        left: 55%;
+    }
+    .A9{
+        top: 36%;
+        left: 29%;
+    }
+    .A10{
+        top: 30%;
+        left: 69%;
+    }
+    .A11{
+        top: 41%;
+        left: 18%;
+    }
+    .A12{
+        top: 50%;
+        left: 24%;
+    }
+    .A13{
+        top: 56%;
+        left: 30%;
+    }
+    .A14{
+        top: 63%;
+        left: 36%;
+    }
+    .A15{
+        top: 70%;
+        left: 42%;
+    }
+    .A16{
+        top: 63%;
+        left: 48%;
+    }
+    .A17{
+        top: 56%;
+        left: 54%;
+    }
+    .A18{
+        top: 50%;
+        left: 60%;
+    }
+    .A19{
+        top: 41%;
+        left: 66%;
+    }
+    .A20{
+        top: 22%;
+        left: 21%;
+    }
+    .A21{
+        top: 35%;
+        left: 86%;
+    }
+    .A22{
+        top: 22%;
+        left: 33%;
+    }
+    .A23{
+        top: 34%;
+        left: 42%;
+    }
+    .A24{
+        top: 8%;
+        left: 76%;
+    }
+    .A25{
+        top: 22%;
+        left: 51%;
+    }
+    .A26{
+        top: 22%;
+        left: 57%;
+    }
+    .A27{
+        top: 22%;
+        left: 63%;
+    }
+    .A28{
+        top: 16%;
+        left: 27%;
+    }
+    .A29{
+        top: 18%;
+        left: 42%;
+    }
+    .A30{
+        top: 16%;
+        left: 57%;
+    }
