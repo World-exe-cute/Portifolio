@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/MyTube/static/css/main.41f80a5e.css",
-    "main.js": "/MyTube/static/js/main.fda5ab12.js",
+    "main.css": "/MyTube/static/css/main.c9f0396f.css",
+    "main.js": "/MyTube/static/js/main.c9528a2c.js",
     "index.html": "/MyTube/index.html",
-    "main.41f80a5e.css.map": "/MyTube/static/css/main.41f80a5e.css.map",
-    "main.fda5ab12.js.map": "/MyTube/static/js/main.fda5ab12.js.map"
+    "main.c9f0396f.css.map": "/MyTube/static/css/main.c9f0396f.css.map",
+    "main.c9528a2c.js.map": "/MyTube/static/js/main.c9528a2c.js.map"
   },
   "entrypoints": [
-    "static/css/main.41f80a5e.css",
-    "static/js/main.fda5ab12.js"
+    "static/css/main.c9f0396f.css",
+    "static/js/main.c9528a2c.js"
   ]
 }
