@@ -279,10 +279,17 @@ footer > div {
 
   main .project-container .project-image {
     width: 75%;
+    height: 350px;
   }
 
   main .project-container .project-description-box {
     width: 100%;
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  main .project-container .project-image {
+    height: 300px;
   }
 }
