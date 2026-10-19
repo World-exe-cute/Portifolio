@@ -53,7 +53,7 @@ function MoveBar() {
     }
     //encontra a atual localização do mouse.
     var MousePercentLeft = 0;
-    window.addEventListener("pointermove", (Local) => {
+    /*window.addEventListener("pointermove", (Local) => {
       x = Local.clientX;
       y = Local.clientY;
       MousePercentLeft = (x * 100) / window.innerWidth;
@@ -81,11 +81,39 @@ function MoveBar() {
           BarraDir.style.left = CountLeftBar2 + "%";
         }
       }
-    });
+    });*/
     //move a barra a cada iteração na diretao do mouse.
 
     //mantem o movimento constante da bola.
     setInterval(() => {
+      x = Local.clientX;
+      y = Local.clientY;
+      MousePercentLeft = (x * 100) / window.innerWidth;
+
+      //transforma o eixo X e Y em % em relaçao a tela.
+      let ParedePercentDir = (ParedeHitBoxDir.left * 100) / window.innerWidth;
+      let ParedePercentEsq = (ParedeHitBoxEsq.left * 100) / window.innerWidth;
+      //tira os decimais...
+      let ParedeMatchDir = Math.trunc(ParedePercentDir);
+      let ParedeMatchEsq = Math.trunc(ParedePercentEsq);
+      //move a barra na direção do mouse.
+      if (CountLeftBar2 + 4 != ParedeMatchDir) {
+        if (CountLeftBar1 < MousePercentLeft) {
+          CountLeftBar1++;
+          CountLeftBar2++;
+          BarraEsq.style.left = CountLeftBar1 + "%";
+          BarraDir.style.left = CountLeftBar2 + "%";
+        }
+      }
+      if (CountLeftBar1 - 1 != ParedeMatchEsq) {
+        if (CountLeftBar1 > MousePercentLeft) {
+          CountLeftBar1--;
+          CountLeftBar2--;
+          BarraEsq.style.left = CountLeftBar1 + "%";
+          BarraDir.style.left = CountLeftBar2 + "%";
+        }
+      }
+
       let BarraPercentEsqY = (BarraHitBoxEsq.top * 100) / window.innerHeight;
       let BarraMathLeftY = Math.trunc(BarraPercentEsqY);
       //procura o atual eixo X da bolinha
