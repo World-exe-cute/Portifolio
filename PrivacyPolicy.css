@@ -1,4 +1,20 @@
 body > div {
   justify-content: center;
   margin: 2rem;
+  width: max-content;
+  margin: 0 1rem;
+  border-radius: 15px;
+  border: 1px solid gray;
+  padding: 1rem;
+  background: rgb(231 222 222);
+}
+
+body {
+  background: linear-gradient(
+    to left,
+    rgb(90, 83, 83),
+    rgb(187 173 173),
+    rgb(187 173 173),
+    rgb(90, 83, 83)
+  );
 }
