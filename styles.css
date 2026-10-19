@@ -38,7 +38,9 @@ nav > .title-box > div {
 }
 
 body {
-  background: radial-gradient(
+  background: linear-gradient(
+    to left,
+    rgb(90, 83, 83),
     rgb(187 173 173),
     rgb(187 173 173),
     rgb(90, 83, 83)
@@ -291,5 +293,10 @@ footer > div {
 @media (max-width: 850px) {
   main .project-container .project-image {
     height: 300px;
+    width: 100%;
+  }
+
+  main .experience-container .hidden-certificate > img {
+    width: 100%;
   }
 }
