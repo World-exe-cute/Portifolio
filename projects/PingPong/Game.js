@@ -14,8 +14,8 @@ var IterationBlock = 0;
 var blockIdTest = 0;
 //uma função que vai mover o jogo todo.
 function MoveBar() {
-  console.log("ola?");
   if (IterationBlock == 0) {
+    console.log("ola?");
     IterationBlock = 1;
     var BarraEsq = document.getElementById("BarraEsq");
     var BarraDir = document.getElementById("BarraDir");
@@ -83,14 +83,15 @@ function MoveBar() {
         }
       }
     });*/
+    window.addEventListener("pointermove", (Local) => {
+      x = Local.clientX;
+      y = Local.clientY;
+      MousePercentLeft = (x * 100) / window.innerWidth;
+    });
     //move a barra a cada iteração na diretao do mouse.
 
     //mantem o movimento constante da bola.
     setInterval(() => {
-      x = Local.clientX;
-      y = Local.clientY;
-      MousePercentLeft = (x * 100) / window.innerWidth;
-
       //transforma o eixo X e Y em % em relaçao a tela.
       let ParedePercentDir = (ParedeHitBoxDir.left * 100) / window.innerWidth;
       let ParedePercentEsq = (ParedeHitBoxEsq.left * 100) / window.innerWidth;
