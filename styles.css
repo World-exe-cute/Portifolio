@@ -40,10 +40,9 @@ nav > .title-box > div {
 body {
   background: linear-gradient(
     to left,
-    rgb(90, 83, 83),
-    rgb(187 173 173),
-    rgb(187 173 173),
-    rgb(90, 83, 83)
+    rgb(112, 112, 112) rgb(202, 201, 201),
+    rgb(202, 201, 201),
+    rgb(112, 112, 112)
   );
 }
 
