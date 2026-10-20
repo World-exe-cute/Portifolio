@@ -40,7 +40,8 @@ nav > .title-box > div {
 body {
   background: linear-gradient(
     to left,
-    rgb(112, 112, 112) rgb(202, 201, 201),
+    rgb(112, 112, 112),
+    rgb(202, 201, 201),
     rgb(202, 201, 201),
     rgb(112, 112, 112)
   );
@@ -297,5 +298,9 @@ footer > div {
 
   main .experience-container .hidden-certificate > img {
     width: 100%;
+  }
+
+  main > .profile-container > .profile-description-box {
+    width: 90%;
   }
 }
