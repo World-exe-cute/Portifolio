@@ -83,11 +83,19 @@ function MoveBar() {
         }
       }
     });*/
-    window.addEventListener("pointermove", (Local) => {
-      x = Local.clientX;
-      y = Local.clientY;
-      MousePercentLeft = (x * 100) / window.innerWidth;
-    });
+    if (window.innerWidth <= 1400) {
+      window.addEventListener("click", (Local) => {
+        x = Local.clientX;
+        y = Local.clientY;
+        MousePercentLeft = (x * 100) / window.innerWidth;
+      });
+    } else {
+      window.addEventListener("pointermove", (Local) => {
+        x = Local.clientX;
+        y = Local.clientY;
+        MousePercentLeft = (x * 100) / window.innerWidth;
+      });
+    }
     //move a barra a cada iteração na diretao do mouse.
 
     //mantem o movimento constante da bola.
