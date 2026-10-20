@@ -14,6 +14,7 @@ var IterationBlock = 0;
 var blockIdTest = 0;
 //uma função que vai mover o jogo todo.
 function MoveBar() {
+  console.log("ola?");
   if (IterationBlock == 0) {
     IterationBlock = 1;
     var BarraEsq = document.getElementById("BarraEsq");
