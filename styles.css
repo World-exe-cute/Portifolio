@@ -150,6 +150,15 @@ main .project-container .project-description-box {
   background: rgb(231 222 222);
 }
 
+main .project-container .project-description-box > a {
+  justify-self: center;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background: rgb(153, 153, 153);
+  border-radius: 25px;
+  margin-top: 1rem;
+}
+
 main .project-container .project-description-box > p {
   font-size: 1.1rem;
 }
