@@ -13,6 +13,23 @@ var IterationBlock = 0;
 //verifica qual o lado do bloco a bola ira encostar.
 var blockIdTest = 0;
 //uma função que vai mover o jogo todo.
+
+//funçoes para mover a barra no modo mobile
+var directionBar = false;
+function MoveBarLeft() {
+  directionBar = "left";
+}
+
+function MoveBarRight() {
+  directionBar = "right";
+}
+
+function StopBarMove() {
+  directionBar = false;
+}
+
+//uma função que vai mover o jogo todo.
+
 function MoveBar() {
   if (IterationBlock == 0) {
     console.log("ola?");
@@ -83,12 +100,19 @@ function MoveBar() {
         }
       }
     });*/
-    if (window.innerWidth <= 1400) {
-      window.addEventListener("click", (Local) => {
+    if (window.innerWidth <= 1200) {
+      /*window.addEventListener("click", (Local) => {
         x = Local.clientX;
         y = Local.clientY;
         MousePercentLeft = (x * 100) / window.innerWidth;
-      });
+      });*/
+      /*if (directionBar === "left") {
+
+      } else if(directionBar === "right") {
+
+      } else {
+
+      }*/
     } else {
       window.addEventListener("pointermove", (Local) => {
         x = Local.clientX;
@@ -108,7 +132,11 @@ function MoveBar() {
       let ParedeMatchEsq = Math.trunc(ParedePercentEsq);
       //move a barra na direção do mouse.
       if (CountLeftBar2 + 4 != ParedeMatchDir) {
-        if (CountLeftBar1 < MousePercentLeft) {
+        if (
+          window.innerWidth <= 1200
+            ? directionBar === "right"
+            : CountLeftBar1 < MousePercentLeft
+        ) {
           CountLeftBar1++;
           CountLeftBar2++;
           BarraEsq.style.left = CountLeftBar1 + "%";
@@ -116,7 +144,11 @@ function MoveBar() {
         }
       }
       if (CountLeftBar1 - 1 != ParedeMatchEsq) {
-        if (CountLeftBar1 > MousePercentLeft) {
+        if (
+          window.innerWidth <= 1200
+            ? directionBar === "left"
+            : CountLeftBar1 > MousePercentLeft
+        ) {
           CountLeftBar1--;
           CountLeftBar2--;
           BarraEsq.style.left = CountLeftBar1 + "%";
