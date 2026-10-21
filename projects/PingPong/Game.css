@@ -218,7 +218,11 @@ body {
 }
 
 @media (max-width: 1200px) {
+  body {
+    touch-action: manipulation;
+  }
   .buttonMobile {
     visibility: visible;
+    touch-action: manipulation;
   }
 }
