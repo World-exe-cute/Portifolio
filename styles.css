@@ -151,6 +151,7 @@ main .project-container .project-description-box {
 }
 
 main .project-container .project-description-box > a {
+  all: unset;
   justify-self: center;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
