@@ -195,10 +195,10 @@ body {
 .buttonMobile > .buttonLeft {
   justify-self: baseline;
   position: absolute;
-  font-size: 3rem;
-  background: black;
+  font-size: 6rem;
+  background: rgba(0, 0, 0, 0.6);
   color: white;
-  padding: 0 1rem;
+  padding: 0 2.5rem;
   border-radius: 15px;
   margin: 1rem;
   bottom: 0;
@@ -207,10 +207,10 @@ body {
 .buttonMobile > .buttonRight {
   justify-self: end;
   position: absolute;
-  font-size: 3rem;
-  background: black;
+  font-size: 6rem;
+  background: rgba(0, 0, 0, 0.6);
   color: white;
-  padding: 0 1rem;
+  padding: 0 2.5rem;
   border-radius: 15px;
   margin: 1rem;
   bottom: 0;
