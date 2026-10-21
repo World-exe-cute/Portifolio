@@ -154,9 +154,11 @@ main .project-container .project-description-box > a {
   justify-self: center;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
-  background: rgb(153, 153, 153);
+  background: rgb(197, 197, 197);
   border-radius: 25px;
   margin-top: 1rem;
+  display: flex;
+  cursor: pointer;
 }
 
 main .project-container .project-description-box > p {
