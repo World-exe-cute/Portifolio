@@ -137,8 +137,8 @@ function MoveBar() {
             ? directionBar === "right"
             : CountLeftBar1 < MousePercentLeft
         ) {
-          window.innerWidth <= 1200 ? (CountLeftBar1 += 3) : CountLeftBar1++;
-          window.innerWidth <= 1200 ? (CountLeftBar1 += 3) : CountLeftBar2++;
+          window.innerWidth <= 1200 ? (CountLeftBar1 += 2) : CountLeftBar1++;
+          window.innerWidth <= 1200 ? (CountLeftBar1 += 2) : CountLeftBar2++;
           BarraEsq.style.left = CountLeftBar1 + "%";
           BarraDir.style.left = CountLeftBar2 + "%";
         }
