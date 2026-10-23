@@ -137,8 +137,8 @@ function MoveBar() {
             ? directionBar === "right"
             : CountLeftBar1 < MousePercentLeft
         ) {
-          CountLeftBar1++;
-          CountLeftBar2++;
+          window.innerWidth <= 1200 ? (CountLeftBar1 += 3) : CountLeftBar1++;
+          window.innerWidth <= 1200 ? (CountLeftBar1 += 3) : CountLeftBar2++;
           BarraEsq.style.left = CountLeftBar1 + "%";
           BarraDir.style.left = CountLeftBar2 + "%";
         }
@@ -316,8 +316,7 @@ function MoveBar() {
       if (BallMovY == deadZoneMatch) {
         alert("Fim de jogo.");
         location.reload();
-      } else if (blockArrayX == []) {
-        //nunca consegui ganhar KKKK
+      } else if (blockArrayX.length <= 0) {
         alert("Voce ganhou!");
       }
     }, 35);
