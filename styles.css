@@ -255,13 +255,11 @@ h3 {
 .btn-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: var(--accent-contrast);
-  box-shadow: 0 10px 30px -12px var(--accent);
 }
 
 .btn-whatsapp {
   background: #25d366;
   color: #062b15;
-  box-shadow: 0 10px 30px -12px #25d366;
 }
 
 .btn-ghost {
@@ -311,11 +309,6 @@ h3 {
   width: 60vw;
   max-width: 700px;
   aspect-ratio: 1;
-  background: radial-gradient(
-    circle,
-    color-mix(in srgb, var(--accent) 35%, transparent),
-    transparent 65%
-  );
   filter: blur(40px);
   pointer-events: none;
 }
@@ -729,13 +722,6 @@ h3 {
   padding: clamp(2.5rem, 6vw, 4rem) 1.5rem;
   position: relative;
   overflow: hidden;
-  background:
-    radial-gradient(
-      ellipse at top,
-      color-mix(in srgb, var(--accent) 18%, transparent),
-      transparent 70%
-    ),
-    var(--surface);
 }
 
 .contact h2 {
