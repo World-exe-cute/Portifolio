@@ -1,56 +1,80 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./PrivacyPolicy.css" />
-    <title>Document</title>
+    <title>Política de Privacidade · MyTube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./PrivacyPolicy.css" />
+    <script>
+      try {
+        const saved = localStorage.getItem("theme");
+        if (saved) document.documentElement.dataset.theme = saved;
+      } catch (e) {}
+    </script>
   </head>
   <body>
-    <div>
-      <h2>1. informações gerais</h2>
-      <p>
-        O MyTube é uma plataforma que permite aos usuários criar contas,
-        personalizar seus perfis e publicar conteúdos audiovisuais e textuais.
-        <br />
-        <br />
-        Esta Política de Privacidade explica como as informações dos usuários
-        são tratadas durante a utilização da plataforma.
-      </p>
-      <h2>2. Como os dados são tratados</h2>
-      <p>
-        Para criar uma conta, o MyTube solicita um endereço de e-mail e uma
-        senha e os armazena no banco de dados. A senha é armazenada com o
-        bcrypt.hash mas por segurança evite utilizar sua senha usual ou seu
-        e-mail principal.
-        <br />
-        <br />
-        Durante a utilização da plataforma, os usuários também podem fornecer
-        conteúdos, incluindo vídeos, imagens, descrições, comentários e outras
-        informações inseridas voluntariamente.
-        <br />
-        Evite conteúdos com direitos autorais ou informações pessoais.
-        <br />
-        <br />
-        A conta e os conteúdos dessa conta serão deletados em ate 30 dias para
-        evitar qualquer problema.
-        <br />
-        Caso algum problema ocorra envie uma mensagem para:
-        mytube.testeconexao@gmail.com pedindo a exclusão da conta ou conteúdo.
-      </p>
-      <h2>3. Armazenamento e serviços de terceiros</h2>
-      <p>
-        O funcionamento do MyTube envolve serviços externos gratuitos de
-        hospedagem, banco de dados e armazenamento de arquivos.<br />
-        Os serviços incluem Mongodb como banco de dados, Render como hospedagem,
-        Backend e o Cloudinary como armazenamento de vídeos e imagens.
-      </p>
-      <h2>4. Contato</h2>
-      <p>
-        Para dúvidas ou solicitações relacionadas à privacidade e aos dados
-        pessoais, entre em contato pelo seguinte endereço:
-        mytube.testeconexao@gmail.com
-      </p>
-    </div>
+    <main class="container policy">
+      <a href="/" class="policy-back">← Voltar ao portfólio</a>
+      <h1>Política de Privacidade</h1>
+      <p class="policy-sub">MyTube</p>
+      <div class="card">
+        <h2>1. Informações gerais</h2>
+        <p>
+          O MyTube é uma plataforma que permite aos usuários criar contas,
+          personalizar seus perfis e publicar conteúdos audiovisuais e textuais.
+        </p>
+        <p>
+          Esta Política de Privacidade explica como as informações dos usuários
+          são tratadas durante a utilização da plataforma.
+        </p>
+        <h2>2. Como os dados são tratados</h2>
+        <p>
+          Para criar uma conta, o MyTube solicita um endereço de e-mail e uma
+          senha e os armazena no banco de dados. A senha é armazenada com o
+          bcrypt.hash mas por segurança evite utilizar sua senha usual ou seu
+          e-mail principal.
+        </p>
+        <p>
+          Durante a utilização da plataforma, os usuários também podem fornecer
+          conteúdos, incluindo vídeos, imagens, descrições, comentários e outras
+          informações inseridas voluntariamente. Evite conteúdos com direitos
+          autorais ou informações pessoais.
+        </p>
+        <p>
+          A conta e os conteúdos dessa conta serão deletados em até 30 dias para
+          evitar qualquer problema. Caso algum problema ocorra envie uma
+          mensagem para:
+          <a href="mailto:mytube.testeconexao@gmail.com"
+            >mytube.testeconexao@gmail.com</a
+          >
+          pedindo a exclusão da conta ou conteúdo.
+        </p>
+        <h2>3. Armazenamento e serviços de terceiros</h2>
+        <p>
+          O funcionamento do MyTube envolve serviços externos gratuitos de
+          hospedagem, banco de dados e armazenamento de arquivos.
+        </p>
+        <p>
+          Os serviços incluem MongoDB como banco de dados, Render como
+          hospedagem do Backend e o Cloudinary como armazenamento de vídeos e
+          imagens.
+        </p>
+        <h2>4. Contato</h2>
+        <p>
+          Para dúvidas ou solicitações relacionadas à privacidade e aos dados
+          pessoais, entre em contato pelo seguinte endereço:
+          <a href="mailto:mytube.testeconexao@gmail.com"
+            >mytube.testeconexao@gmail.com</a
+          >
+        </p>
+      </div>
+    </main>
   </body>
 </html>

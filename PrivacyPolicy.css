@@ -1,21 +1,41 @@
-body > div {
-  display: grid;
-  justify-self: center;
-  justify-content: center;
-  margin: 2rem 1rem;
-  width: 85%;
-  border-radius: 15px;
-  border: 1px solid gray;
-  padding: 1rem;
-  background: rgb(231 222 222);
+.policy {
+  max-width: 760px;
+  padding: clamp(2rem, 6vw, 4rem) 0;
 }
 
-body {
-  background: linear-gradient(
-    to left,
-    rgb(112, 112, 112),
-    rgb(202, 201, 201),
-    rgb(202, 201, 201),
-    rgb(112, 112, 112)
-  );
+.policy-back {
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.policy h1 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+}
+
+.policy-sub {
+  margin: 0.25rem 0 2rem;
+  color: var(--accent-2);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.policy h2 {
+  font-size: 1.25rem;
+  margin: 2rem 0 0.75rem;
+}
+
+.policy h2:first-child {
+  margin-top: 0;
+}
+
+.policy p {
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+
+.policy a {
+  overflow-wrap: anywhere;
 }

@@ -1,168 +1,440 @@
-<html>
+<!doctype html>
+<html lang="pt-BR">
   <head>
-    <title>Portifolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <script src="./scripts.js"></script>
+    <title>Rodrigo Leite Badini · Desenvolvedor</title>
+    <meta
+      name="description"
+      content="Portfólio de Rodrigo Leite Badini, desenvolvedor focado em React e Node.js."
+    />
+    <meta name="theme-color" content="#0b0d12" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        const saved = localStorage.getItem("theme");
+        if (saved) document.documentElement.dataset.theme = saved;
+      } catch (e) {}
+    </script>
+    <script src="./scripts.js" defer></script>
   </head>
-  <body onclick="removeEvent(this)">
-    <main>
-      <section class="profile-container">
-        <div class="profile-img-box">
-          <img src="./img/foto de perfil.jpeg" />
-        </div>
-        <div class="profile-title">Rodrigo Leite Badini</div>
-        <div class="profile-about">Sobre mim</div>
-        <div class="profile-description-box">
-          <p>
-            Sou um desenvolvedor de 30 anos, e minha trajetória começou por meio
-            de cursos online, iniciando pelo básico de HTML, CSS e JavaScript.
-            <br />
-            <br />
-            Hoje, após 6 anos de estudo, desenvolvi meu maior projeto em React e
-            Node.js, sendo minha especialização. Meu processo de aprendizado foi
-            desafiador, mas tenho como norte um lema:
-            <strong>
-              se consigo me imaginar fazendo algo, é possível realizá-lo.
-            </strong>
-            Continuarei aprendendo cada vez mais ao longo da minha carreira.
-            <br />
-            <br />
-            Falando um pouco sobre mim, sou muito determinado, atento aos
-            detalhes, flexível e sempre disposto a me tornar um profissional
-            ainda melhor. Apesar de ainda não ter experiência no mercado de
-            trabalho, sou adaptável o suficiente para me encaixar aos padrões de
-            qualquer empresa. Tenho perfil profissional mais analítico e
-            criativo.
-          </p>
-        </div>
-        <div class="line-break"></div>
-      </section>
-      <section class="project-container">
-        <h2>Projetos</h2>
-        <h3>MyTube</h3>
-        <div class="reverse">
-          <a href="/MyTube" class="project-image">
-            <img src="./img/MyTube.png" />
-          </a>
-          <div class="project-description-box">
-            <a href="/MyTube">Confira aqui</a>
-            <p>
-              Este é o meu maior projeto, um clone do YouTube feito em React
-              para o FrontEnd e Node.js com Express para o Backend, utilizando
-              Recaptcha v3 do google. O site é responsivo, permite criar contas
-              que guardam informações como inscrições, personalização, vídeos do
-              usuário, histórico e vídeos curtidos. Os vídeos que aparecem no
-              feed são buscados através de relevância com as tags do usuário ou
-              tags padrões, caso esteja deslogado. Os vídeos também tem
-              informações guardadas no banco de dados como likes, visualizações,
-              descrições e comentários que por sua vez também guardam
-              informações. As contas tem acesso a página de gerenciamento de
-              canais quando estão logadas, onde podem verificar todos os vídeos
-              e suas informações, análises gráficas do ultimo vídeo, comentários
-              de todos os vídeos, personalização de canal e informações. O site
-              utiliza o render gratuito, por isso o Backend demora cerca de 40
-              segundos para funcionar pela primeira vez.<br />
-              Por fim, gostaria de pedir para que deixe um feedback, caso se
-              sinta confortável e/ou encontre bugs no site.
-              <br />
-              <br />
-              <a href="/MyTube/feedback">Clique aqui para dar o feedback.</a>
-              <br />
-              <br />
-              Mais informações sobre o site:
-              <a href="/PrivacyPolicy">Política de privacidade.</a>
-              <br />
-              <br />
-              <a href="https://github.com/World-exe-cute/Projeto-MyTube.git"
-                >Link para o repositório do Github</a
-              >
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        
+        <nav class="nav-links" aria-label="Navegação principal">
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#certificados">Certificados</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Alternar tema claro/escuro"
+        >
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+            />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="topo">
+      <section class="hero">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <div class="hero-text reveal">
+            <p class="eyebrow">Olá, eu sou</p>
+            <h1>Rodrigo Leite Badini</h1>
+            <p class="hero-role">
+              Desenvolvedor Full Stack com
+              foco em React e Node.js
             </p>
-          </div>
-        </div>
-        <h3>Ping-pong</h3>
-        <div>
-          <a href="/projects/PingPong/game" class="project-image">
-            <img src="./img/ping-pong.png" />
-          </a>
-          <div class="project-description-box">
-            <a href="/projects/PingPong/game">Confira aqui</a>
-            <p>
-              Este é um jogo de ping-pong que criei por volta de 2022 feito em
-              HTML, CSS e JavaScript, o jogo move a bolinha em linha reta frame
-              por frame infinitamente, sempre verificando se ela está em contato
-              com uma superfície, caso esteja ela inverte seu ângulo e continua
-              a se mover. O jogo detecta superfície nos retângulos e paredes, e
-              a barra movida pelo jogador sempre segue o mouse e tem duas
-              extremidades: direita e esquerda, fazendo o ângulo da bolinha ir
-              preferencialmente para a direção dessa extremidade. O jogo acaba
-              quando a bolinha cruza a linha vermelha ou quando todos os blocos
-              somem, sendo honesto so consegui vencer o jogo uma vez.
-              <br />
-              <br />
-              <a href="https://github.com/World-exe-cute/Portifolio.git"
-                >Link para o repositorio no github</a
-              >
-            </p>
-          </div>
-        </div>
-      </section>
-      <div class="line-break"></div>
-      <section class="experience-container">
-        <h2>Certificados</h2>
-        <div>
-          <h3>Desenvolvimento Web Completo</h3>
-          <a
-            href="https://ude.my/UC-6a80c305-5fc2-4678-ae16-dc0fcd6f193c"
-            target="_blank"
-            >Comprovação do certificado</a
-          >
-          <div class="hidden-certificate">
-            <div class="button" onclick="showCertificate(this)">
-              Mostrar Certificado.
+            <div class="hero-actions">
+              <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+              <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
             </div>
-            <img src="./img/Certificado desenvolvimento frontEnt UDEMY.jpg" />
+            <ul class="socials">
+              <li>
+                <a
+                  href="https://github.com/World-exe-cute"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:rodrigoleitebadini1@gmail.com"
+                  aria-label="E-mail"
+                >
+                  <svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m3 7 9 6 9-6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/5522998491798"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="WhatsApp"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-photo reveal">
+            <img
+              src="./img/foto de perfil.jpeg"
+              alt="Foto de Rodrigo Leite Badini"
+              width="320"
+              height="320"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            
+            <h2>Sobre mim</h2>
+          </div>
+          <div class="about-grid">
+            <div class="card about-text reveal">
+        <p></p>      
+                Sou um desenvolvedor de 30 anos, e minha trajetória começou por
+                meio de cursos online, iniciando pelo básico de HTML, CSS e
+                JavaScript.
+              </p>
+              <p>
+                Hoje, após 6 anos de estudo, desenvolvi meu maior projeto em
+                React e Node.js, sendo minha especialização. Meu processo de
+                aprendizado foi desafiador, mas tenho como norte um lema:
+              </p>
+              <blockquote>
+                Se consigo me imaginar fazendo algo, é possível realizá-lo.
+              </blockquote>
+              <p>
+                Continuarei aprendendo cada vez mais ao longo da minha carreira.
+              </p>
+              <p>
+                Falando um pouco sobre mim, sou muito determinado, atento aos
+                detalhes, flexível e sempre disposto a me tornar um profissional
+                ainda melhor. Apesar de ainda não ter experiência no mercado de
+                trabalho, sou adaptável o suficiente para me encaixar aos padrões
+                de qualquer empresa. Tenho perfil profissional mais analítico e
+                criativo.
+              </p>
+            </div>
+            <aside class="about-side">
+              <div class="card stat reveal">
+                <strong>6+</strong>
+                <span>anos de estudo</span>
+              </div>
+              <div class="card stat reveal">
+                <strong>3</strong>
+                <span>certificações</span>
+              </div>
+              <div class="card reveal">
+                <h3 class="card-title">Tecnologias</h3>
+                <ul class="chips">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>MVC</li>
+                  <li>MongoDB</li>
+                  <li>Python</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            
+            <h2>Projetos</h2>
           </div>
 
-          <h3>Udemy: Desenvolvimento React do zero c/ hooks, router e API.</h3>
-          <a
-            href="https://ude.my/UC-4113d5b6-fe40-4984-9f7a-4b5e7de125f8"
-            target="_blank"
-          >
-            Comprovação do certificado
-          </a>
-          <div class="hidden-certificate">
-            <div class="button" onclick="showCertificate(this)">
-              Mostrar Certificado.
+          <article class="project reveal">
+            <a href="/MyTube" class="project-media">
+              <img
+                src="./img/MyTube.png"
+                alt="Captura de tela do MyTube"
+                loading="lazy"
+              />
+            </a>
+            <div class="project-body">
+              <span class="project-label">Projeto principal</span>
+              <h3>MyTube</h3>
+              <ul class="chips chips-sm">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MVC</li>
+                <li>reCAPTCHA v3</li>
+              </ul>
+              <p>
+                Este é o meu maior projeto, um clone do YouTube feito em React
+                para o FrontEnd e Node.js com Express para o Backend, estruturado
+                no padrão MVC (Model-View-Controller) e utilizando Recaptcha v3
+                do google. O site é responsivo, permite criar contas
+                que guardam informações como inscrições, personalização, vídeos
+                do usuário, histórico e vídeos curtidos.
+              </p>
+              <details>
+                <summary>Mais detalhes</summary>
+                <p>
+                  Os vídeos que aparecem no feed são buscados através de
+                  relevância com as tags do usuário ou tags padrões, caso esteja
+                  deslogado. Os vídeos também têm informações guardadas no banco
+                  de dados como likes, visualizações, descrições e comentários que
+                  por sua vez também guardam informações.
+                </p>
+                <p>
+                  As contas têm acesso à página de gerenciamento de canais quando
+                  estão logadas, onde podem verificar todos os vídeos e suas
+                  informações, análises gráficas do último vídeo, comentários de
+                  todos os vídeos, personalização de canal e informações.
+                </p>
+                <p>
+                  Por fim, gostaria de pedir para que deixe um
+                  <a href="/MyTube/feedback">feedback</a>, caso se sinta
+                  confortável e/ou encontre bugs no site. Mais informações na
+                  <a href="/PrivacyPolicy">política de privacidade</a>.
+                </p>
+              </details>
+              <p class="note">
+                O site utiliza o Render gratuito, por isso o Backend demora cerca
+                de 40 segundos para funcionar pela primeira vez.
+              </p>
+              <div class="project-actions">
+                <a href="/MyTube" class="btn btn-primary">Confira aqui</a>
+                <a
+                  href="https://github.com/World-exe-cute/Projeto-MyTube.git"
+                  class="btn btn-ghost"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
             </div>
-            <img src="./img/certificado React UDEMY.jpg" />
-          </div>
+          </article>
 
-          <h3>Programação em Python do básico ao avançado.</h3>
-          <a
-            href="https://ude.my/UC-bedc5133-64f5-4f7c-a203-f7c7f61e648d"
-            target="_blank"
-          >
-            Comprovação do certificado
-          </a>
-          <div class="hidden-certificate">
-            <div class="button" onclick="showCertificate(this)">
-              Mostrar Certificado.
+          <article class="project project-reverse reveal">
+            <a href="/projects/PingPong/game.html" class="project-media">
+              <img
+                src="./img/ping-pong.png"
+                alt="Captura de tela do jogo Ping-pong"
+                loading="lazy"
+              />
+            </a>
+            <div class="project-body">
+              <span class="project-label">Jogo · 2022</span>
+              <h3>Ping-pong</h3>
+              <ul class="chips chips-sm">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <p>
+                Este é um jogo de ping-pong que criei por volta de 2022 feito em
+                HTML, CSS e JavaScript, o jogo move a bolinha em linha reta frame
+                por frame infinitamente, sempre verificando se ela está em
+                contato com uma superfície, caso esteja ela inverte seu ângulo e
+                continua a se mover.
+              </p>
+              <details>
+                <summary>Mais detalhes</summary>
+                <p>
+                  O jogo detecta superfície nos retângulos e paredes, e a barra
+                  movida pelo jogador sempre segue o mouse e tem duas
+                  extremidades: direita e esquerda, fazendo o ângulo da bolinha
+                  ir preferencialmente para a direção dessa extremidade. O jogo
+                  acaba quando a bolinha cruza a linha vermelha ou quando todos os
+                  blocos somem, sendo honesto só consegui vencer o jogo uma vez.
+                </p>
+              </details>
+              <div class="project-actions">
+                <a href="/projects/PingPong/game" class="btn btn-primary"
+                  >Confira aqui</a
+                >
+                <a
+                  href="https://github.com/World-exe-cute/Portifolio.git"
+                  class="btn btn-ghost"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
             </div>
-            <img src="./img/Certificado Python UDEMY.jpg" />
+          </article>
+        </div>
+      </section>
+
+      <section id="certificados" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            
+            <h2>Certificados</h2>
+          </div>
+          <div class="cert-grid">
+            <article class="card cert reveal">
+              <button
+                class="cert-thumb"
+                type="button"
+                data-src="./img/Certificado desenvolvimento frontEnt UDEMY.jpg"
+                data-title="Desenvolvimento Web Completo"
+              >
+                <img
+                  src="./img/Certificado desenvolvimento frontEnt UDEMY.jpg"
+                  alt="Certificado Desenvolvimento Web Completo"
+                  loading="lazy"
+                />
+                <span>Ver certificado</span>
+              </button>
+              <span class="cert-issuer">Udemy</span>
+              <h3>Desenvolvimento Web Completo</h3>
+              <a
+                href="https://ude.my/UC-6a80c305-5fc2-4678-ae16-dc0fcd6f193c"
+                target="_blank"
+                rel="noopener"
+                class="link-arrow"
+                >Comprovação do certificado</a
+              >
+            </article>
+
+            <article class="card cert reveal">
+              <button
+                class="cert-thumb"
+                type="button"
+                data-src="./img/certificado React UDEMY.jpg"
+                data-title="Desenvolvimento React do zero c/ hooks, router e API"
+              >
+                <img
+                  src="./img/certificado React UDEMY.jpg"
+                  alt="Certificado Desenvolvimento React"
+                  loading="lazy"
+                />
+                <span>Ver certificado</span>
+              </button>
+              <span class="cert-issuer">Udemy</span>
+              <h3>Desenvolvimento React do zero c/ hooks, router e API</h3>
+              <a
+                href="https://ude.my/UC-4113d5b6-fe40-4984-9f7a-4b5e7de125f8"
+                target="_blank"
+                rel="noopener"
+                class="link-arrow"
+                >Comprovação do certificado</a
+              >
+            </article>
+
+            <article class="card cert reveal">
+              <button
+                class="cert-thumb"
+                type="button"
+                data-src="./img/Certificado Python UDEMY.jpg"
+                data-title="Programação em Python do básico ao avançado"
+              >
+                <img
+                  src="./img/Certificado Python UDEMY.jpg"
+                  alt="Certificado Programação em Python"
+                  loading="lazy"
+                />
+                <span>Ver certificado</span>
+              </button>
+              <span class="cert-issuer">Udemy</span>
+              <h3>Programação em Python do básico ao avançado</h3>
+              <a
+                href="https://ude.my/UC-bedc5133-64f5-4f7c-a203-f7c7f61e648d"
+                target="_blank"
+                rel="noopener"
+                class="link-arrow"
+                >Comprovação do certificado</a
+              >
+            </article>
           </div>
         </div>
       </section>
-      <div class="line-break"></div>
+
+      <section id="contato" class="section">
+        <div class="container">
+          <div class="card contact reveal">
+            <h2>Vamos conversar?</h2>
+            <p>
+              Estou aberto a oportunidades e feedbacks. Mande uma mensagem e eu
+              respondo assim que possível.
+            </p>
+            <div class="contact-actions">
+              <a
+                href="https://wa.me/5522998491798"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-whatsapp"
+                >WhatsApp · (22) 99849-1798</a
+              >
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=rodrigoleitebadini1@gmail.com&su=Contato%20pelo%20portfólio"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary"
+                >Enviar e-mail</a
+              >
+              <button class="btn btn-ghost copy-email" type="button">
+                <span>rodrigoleitebadini1@gmail.com</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-      <h2>Entre em contato</h2>
-      <a
-        href="https://mail.google.com/mail/?view=cm&fs=1&to=rodrigoleitebadini1@gmail.com&su=Contato%20pelo%20portfólio"
-        >rodrigoleitebadini1@gmail.com</a
-      >
-      <div onclick="rollTop()">Voltar ao topo</div>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span class="year"></span> Rodrigo Leite Badini</p>
+        <a href="#topo" class="link-arrow link-up">Voltar ao topo</a>
+      </div>
     </footer>
+
+    <dialog class="lightbox" aria-label="Certificado">
+      <button class="lightbox-close" type="button" aria-label="Fechar">
+        ×
+      </button>
+      <img alt="" />
+      <p class="lightbox-title"></p>
+    </dialog>
   </body>
 </html>
